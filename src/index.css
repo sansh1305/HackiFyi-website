@@ -1,3 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: "Clash";
+    src: url("../public/fonts/ClashDisplay-Variable.ttf");
+}
+
+@layer components {
+    body{
+        background-color: #0d1117;
+        overflow-x: hidden;
+    }
+    .bg-hero {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .bg-hero::before {
+        height: 100%;
+        width: 100%;
+        --grid-color: #2f353c;
+        --bg-color: #0d1117;
+        --grid-size: 24px;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, var(--bg-color) calc(var(--grid-size) - 2px), transparent 1%) 50%, linear-gradient(var(--bg-color) calc(var(--grid-size) - 2px), transparent 1%) 50%, var(--grid-color);
+        background-position-x: center;
+        background-position-y: center;
+        background-size: var(--grid-size) var(--grid-size);
+        -webkit-mask-image: linear-gradient(0deg, transparent 5%, #000);
+        mask-image: linear-gradient(0deg, transparent 5%, #000);
+    }
+
+
+    .hero h4 {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 300;
+        font-size: 1.21rem;
+        align-self: flex-start;
+    }
+
+    /* ANIMATION */
+    .animation {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .view {
+        perspective: 400;
+    }
+
+    .plane {
+        width: 25rem;
+        height: 25rem;
+        transform-style: preserve-3d;
+    }
+
+    .plane.main {
+        margin: auto;
+        transform: rotateX(60deg) rotateZ(-30deg);
+        animation: rotate 50s infinite ease-in-out;
+    }
+
+    .plane.main .circle {
+        width: 25rem;
+        height: 25rem;
+        position: absolute;
+        transform-style: preserve-3d;
+        border-radius: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 0 50px rgba(220, 20, 60, 0.796), inset 0 0 30px rgba(220, 20, 60, 0.796);
+    }
+
+    .plane.main .circle::before,
+    .plane.main .circle::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 10%;
+        height: 10%;
+        border-radius: 100%;
+        background: transparent;
+        box-sizing: border-box;
+    }
+
+    .plane.main .circle::before {
+        transform: translateZ(-90px);
+    }
+
+    .plane.main .circle::after {
+        transform: translateZ(90px);
+    }
+
+    .plane.main .circle:nth-child(1) {
+        transform: rotateZ(40deg) rotateX(63.435deg);
+    }
+
+    .plane.main .circle:nth-child(2) {
+        transform: rotateZ(80deg) rotateX(63.435deg);
+    }
+
+    .plane.main .circle:nth-child(3) {
+        transform: rotateZ(120deg) rotateX(63.435deg);
+    }
+
+    .plane.main .circle:nth-child(4) {
+        transform: rotateZ(160deg) rotateX(63.435deg);
+    }
+
+    .plane.main .circle:nth-child(5) {
+        transform: rotateZ(200deg) rotateX(63.435deg);
+    }
+
+    .plane.main .circle:nth-child(6) {
+        transform: rotateZ(240deg) rotateX(63.435deg);
+    }
+
+    .plane.main .circle:nth-child(7) {
+        transform: rotateZ(280deg) rotateX(63.435deg);
+    }
+
+    .plane.main .circle:nth-child(8) {
+        transform: rotateZ(320deg) rotateX(63.435deg);
+    }
+
+    .plane.main .circle:nth-child(9) {
+        transform: rotateZ(360deg) rotateX(63.435deg);
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotateX(0) rotateY(0) rotateZ(0);
+        }
+
+        100% {
+            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        }
+    }
+
+}

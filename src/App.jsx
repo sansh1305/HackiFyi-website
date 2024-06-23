@@ -3,16 +3,16 @@ import Landing from './Pages/Landing'
 import SponserUs from './Pages/SponserUs'
 
 function App() {
-  
+
 
   return (
     <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing/>} />
-          <Route path="/sponser" element={<SponserUs/>} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/sponser" element={<SponserUs />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-      export default App
+export default App
