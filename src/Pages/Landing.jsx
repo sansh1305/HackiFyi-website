@@ -1,12 +1,14 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
 
 function Landing() {
     return (
-        <>
-            <div className="flex justify-center bg-black text-white h-screen items-center text-5xl">
-                HackiFyi
-            </div>
-        </>
+        <div className="font-Clash w-screen text-[#f0f8ff] flex justify-center flex-col">
+            <div className="bg-hero"></div>
+            <Navbar />
+            <Hero />
+        </div>
     )
 }
 
