@@ -1,14 +1,17 @@
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Landing from './Pages/Landing'
+import SponserUs from './Pages/SponserUs'
 
 function App() {
   
 
   return (
-    <>
-      <div className="flex justify-center bg-black text-white h-screen items-center text-5xl">
-        HackiFyi
-      </div>
-    </>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing/>} />
+          <Route path="/sponser" element={<SponserUs/>} />
+        </Routes>
+      </BrowserRouter>
   )
 }
 
