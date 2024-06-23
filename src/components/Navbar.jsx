@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import cross from "/images/cross.gif"
 function Navbar() {
 
     const [visible, setvisible] = useState(false)
@@ -10,7 +10,7 @@ function Navbar() {
                 <h3 className="font-medium text-lg lg:text-2xl text-[#dc143ccb]">Hacki<span className="text-[#f0f8ff] mx-1">Fyi</span></h3>
             </div>
             <div className="hamburger z-20" >
-                <img onClick={(e) => setvisible(!visible)} src={`/images/${!visible ? "hamburger.svg" : "cross.gif"}`} alt="" className="h-12 w-auto block lg:hidden" />
+                <img onClick={(e) => setvisible(!visible)} src={`${!visible ? "/images/hamburger.svg" : cross}`} alt="Close" className="h-12 w-auto block lg:hidden" />
             </div>
             <div className="links hidden lg:flex ">
                 <div className="flex gap-8 items-center justify-around w-full ">
