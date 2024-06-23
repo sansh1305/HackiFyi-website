@@ -13,6 +13,8 @@
     body{
         background-color: #0d1117;
         overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
     .bg-hero {
         position: absolute;
@@ -43,8 +45,6 @@
     .hero h4 {
         font-family: 'Source Code Pro', monospace;
         font-weight: 300;
-        font-size: 1.21rem;
-        align-self: flex-start;
     }
 
     /* ANIMATION */
