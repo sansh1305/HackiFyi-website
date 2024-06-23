@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/sponser" element={<SponserUs />} />
+        <Route path="/sponsor" element={<SponserUs />} />
       </Routes>
     </BrowserRouter>
   )

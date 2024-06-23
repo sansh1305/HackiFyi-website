@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import cross from "/images/cross.gif"
+import Animation from '../hooks/scroll'
 function Navbar() {
 
     const [visible, setvisible] = useState(false)
 
     return (
-        <nav id='Home' className="w-screen box-border p-2 lg:p-8 flex items-center justify-between mb-10 overflow-x-hidden">
+        <nav id='Home' ref={Animation("top","30px",1000,10)} className="w-screen box-border p-2 lg:p-8 flex items-center justify-between mb-10 overflow-x-hidden">
             <div className="logo leading-5 uppercase">
                 <h3 className="font-medium text-lg lg:text-2xl text-[#dc143ccb]">Hacki<span className="text-[#f0f8ff] mx-1">Fyi</span></h3>
             </div>
