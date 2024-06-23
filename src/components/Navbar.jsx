@@ -5,7 +5,7 @@ function Navbar() {
     const [visible, setvisible] = useState(false)
 
     return (
-        <nav className="w-screen box-border p-2 lg:p-8 flex items-center justify-between mb-10 overflow-x-hidden">
+        <nav id='Home' className="w-screen box-border p-2 lg:p-8 flex items-center justify-between mb-10 overflow-x-hidden">
             <div className="logo leading-5 uppercase">
                 <h3 className="font-medium text-lg lg:text-2xl text-[#dc143ccb]">Hacki<span className="text-[#f0f8ff] mx-1">Fyi</span></h3>
             </div>
@@ -24,8 +24,8 @@ function Navbar() {
                         Rules & FAQ's
                     </a>
                     <a href="#" className="flex flex-col after:h-[1px] after:w-0 after:bg-[#f0f8ff] after:transition-all after:hover:w-full ">Contact</a>
-                    <a href="#" className="py-4 px-6  font-semibold rounded-md bg-[#f0f8ff] text-black hover:bg-[#dc143ccb] hover:text-[#f0f8ff]">Register Now</a>
-                    <a href="sponsorship.html" className="py-4 px-6 font-semibold rounded-md bg-[#f0f8ff] text-black hover:bg-[#dc143ccb] hover:text-[#f0f8ff]">Sponsor Us</a>
+                    <a href="#" className="py-3 px-4  font-semibold rounded-md bg-[#f0f8ff] text-black hover:bg-[#dc143ccb] hover:text-[#f0f8ff]">Register Now</a>
+                    <a href="/sponsor" className="py-3 px-4 font-semibold rounded-md bg-[#f0f8ff] text-black hover:bg-[#dc143ccb] hover:text-[#f0f8ff]">Sponsor Us</a>
                 </div>
             </div>
 

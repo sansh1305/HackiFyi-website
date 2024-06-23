@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Clash";
-    src: url("../public/fonts/ClashDisplay-Variable.ttf");
+    src: url("/fonts/ClashDisplay-Variable.ttf");
 }
 
 @layer components {
