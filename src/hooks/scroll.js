@@ -15,4 +15,16 @@ const useScrollReveal = (config = {}) => {
   return containerRef;
 };
 
-export default useScrollReveal;
+function Animation(origin,distance,duration,delay) {
+  const containerRef = useScrollReveal({
+    origin: origin,
+    distance: distance,
+    duration: duration,
+    delay: delay,
+    easing: 'ease',
+  });
+
+  return containerRef
+}
+
+export default Animation;
