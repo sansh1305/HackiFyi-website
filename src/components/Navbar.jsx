@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import cross from "/public/images/cross.gif"
+import cross from "/images/cross.gif"
 function Navbar() {
 
     const [visible, setvisible] = useState(false)
