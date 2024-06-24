@@ -27,6 +27,7 @@ function Navbar() {
                     <a href="#" className="flex flex-col after:h-[1px] after:w-0 after:bg-[#f0f8ff] after:transition-all after:hover:w-full ">Contact</a>
                     <a href="#" className="py-3 px-4  font-semibold rounded-md bg-[#f0f8ff] text-black hover:bg-[#dc143ccb] hover:text-[#f0f8ff]">Register Now</a>
                     <a href="/sponsor" className="py-3 px-4 font-semibold rounded-md bg-[#f0f8ff] text-black hover:bg-[#dc143ccb] hover:text-[#f0f8ff]">Sponsor Us</a>
+                    <p>helooooo</p>
                 </div>
             </div>
 
